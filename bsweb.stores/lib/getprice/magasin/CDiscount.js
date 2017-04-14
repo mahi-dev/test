@@ -4,6 +4,7 @@ var price = document.querySelector("span.fpPrice.price");
 if (price != null) {
  return_price_value = price.textContent;
 }
+return_price_value = return_price_value.replace(/\s/g, "");
 return_price_value = return_price_value.replace("€", ".");
 return {
 price: return_price_value,
